@@ -1,0 +1,21 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="./css/flipclock.css">
+<link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body>
+<div id="header">UntilHoliday</div>
+        <div id="clock"></div>
+       <footer id="footer">Made with ♡ by Flawn</footer>
+</body>
+
+<script>
+    var unix = <%- JSON.stringify(time) %>;
+</script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery.countdown.min.js"></script>
+<script src="./js/moment.js"></script>
+<script src="js/main.js"></script>
+</html>

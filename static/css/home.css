@@ -1,0 +1,54 @@
+
+@font-face {
+    font-family: GothamL;
+    src: url("Gotham Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Gotham;
+    src: url("Gotham-Black.otf") format("opentype");
+}
+
+
+
+body {
+    background-image: url("../img/zilesanamin.jpg") !important;
+    background-size: cover
+}
+#clock{
+    text-align: center;
+    position: relative;
+    top: 40vh;
+    transform: translateY(-50%);
+    color: white;
+    font-family: GothamL;
+    font-size: 3vw;
+    word-break: keep-all;
+    font-weight: lighter;
+    z-index: 32;
+}
+
+#biggie{
+    font-size: 5vw;
+    font-family: Gotham;
+    font-weight: bold !important;
+}
+
+
+#footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+     color: white;
+     font-family: GothamL;
+     text-align:center !important;
+}
+
+#header{
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    font-family: GothamL;
+    font-size: 4vw;
+}
