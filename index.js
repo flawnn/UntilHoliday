@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
   });
 })
 
-app.listen( function () {
+app.listen(3000,  function () {
   console.log('Example app listening on port 8000!')
 })
 function getTime() {
