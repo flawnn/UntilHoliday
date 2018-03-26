@@ -12,6 +12,7 @@
     "axios": "^0.18.0",
     "ejs": "^2.5.7",
     "express": "^4.16.3",
+    "jQuery": "^1.7.4",
     "jquery": "^3.3.1",
     "moment": "^2.21.0",
     "moment-timezone": "^0.5.14",

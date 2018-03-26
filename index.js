@@ -1,6 +1,5 @@
 var express = require('express')
 const axios = require('axios');
-var $ = require('jQuery');
 var app = express();
 var Q = require("q");
 var moment = require("moment");
