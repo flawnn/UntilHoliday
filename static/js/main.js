@@ -1,4 +1,5 @@
 var time = moment.unix(unix);
+time.subtract(3, 'days');
 
 $('#clock').countdown(time.toDate(), function(event) {
     var $this = $(this).html(event.strftime(''
