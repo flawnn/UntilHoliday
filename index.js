@@ -10,22 +10,19 @@ app.use(express.static('static'));
 app.get('/', function (req, res) {
   getTime().then(function (result) {
     var index = compareTime(result);
+    console.log(result.data[index].start);
     res.render('home', {
-      time: result.data.daten[index].beginn
+      time: result.data[index].start
     });
   });
 })
 
-app.listen(80,  function () {
+app.listen(8000,  function () {
   console.log('Example app listening on port 80!')
 })
 function getTime() {
   def = Q.defer();
-  axios.get("http://api.smartnoob.de/ferien/v1/ferien", {
-      params: {
-        bundesland: "he",
-        jahr: (new Date()).getFullYear()
-      }
+  axios.get("https://ferien-api.de/api/v1/holidays/HE/" + (new Date()).getFullYear(), {
     })
     .then(function (response) {
       def.resolve(response);
@@ -39,9 +36,9 @@ function getTime() {
 // Compares the times between the starts of the holidaydates
 function compareTime(json) {
   var arr = [];
-  var data = json.data.daten;
+  var data = json.data;
   for (var i in data) {
-    var start = moment.unix(data[i].beginn);
+    var start = moment(data[i].start);
     var now = moment();
     var days = start.diff(now, "m")
     arr.push(days);
