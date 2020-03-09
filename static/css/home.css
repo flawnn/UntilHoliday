@@ -52,3 +52,10 @@ body {
     font-family: GothamL;
     font-size: 4vw;
 }
+
+#timercanvas{
+    position: absolute;
+    z-index: -50;
+    width:  100%;
+    height: 100%;
+}
