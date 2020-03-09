@@ -4,6 +4,7 @@
   "description": "Webpage to show the Holidays in DE",
   "main": "index.js",
   "scripts": {
+    "build": "npm install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index"
   },
