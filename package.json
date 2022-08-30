@@ -17,7 +17,7 @@
     "jQuery": "^1.7.4",
     "jquery": "^3.3.1",
     "moment": "^2.21.0",
-    "moment-timezone": "^0.5.14",
+    "moment-timezone": "^0.5.35",
     "q": "^1.5.1"
   }
 }
